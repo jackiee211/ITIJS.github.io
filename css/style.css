@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh; /* Ensure body takes full height */
+    display: flex;
+    flex-direction: column;
+}
+.navbar-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgba(0, 0, 0, 0.172);
+    height: 100px;
+    padding-left: 25px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    position: absolute;
+}
+.main-offer-container{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200p;
+    background-image: linear-gradient(to bottom, rgba(35, 130, 178, 0.472), rgba(21, 44, 112, 0.209)), url('/images/home-new-bg-free-img.jpg');
+    height:900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-left: 350px;
+}
+.text-button-container{
+    min-width: 200px;
+}
+.main-header-text{
+    font-size: 66px;
+    font-family: Lato;
+    color: rgb(244, 244, 244);
+    letter-spacing: 1.8px;
+    padding: 10px;
+}
+.carousel-container{
+    margin-top: 45px;
+    height: 100px;
+    justify-content: center;
+    padding: 0 25%;
+}
+.carousel-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.offer-cards{
+    height: 550px;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+}
+.offer-card1{
+    background-image:url('/images/women-fashion-free-img.jpg');
+    margin-right: 25px;
+    width: 18%;
+    height: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.offer-card2{
+    background-image:url('/images/men-fashion-free-img.jpg');
+    margin-right: 25px;
+    width: 18%;
+    height: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.offer-card3{
+    background-image:url('/images/footwear-free-img.jpg');
+    margin-right: 25px;
+    width: 18%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.offer-text-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.419);
+    height: 100%;
+    align-items: end;
+    justify-content: start;
+}
+.offer-text-container:hover{
+    background-color: rgba(0, 0, 0, 0.692);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.featured-cont{
+    display: flex;
+    height:100%;
+    background-color: rgb(244, 244, 244);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.featured-header-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.prod-card{
+    margin-left: 5%;
+    margin-bottom: 25px;
+
+}
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.prod-text{
+    width: 100%;
+    
+}
+.bottom-offer-cont{
+    display: flex;
+    width: 100%;
+    height:500px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.bottom-offer-container{
+    display: flex;
+    background-image:url('/images/banner-03.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 70%;
+    padding: 0 5%;
+    align-items: center;
+    justify-content: start;
+}
+.services-container{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    margin-bottom: 250px;
+    padding: 0 15%;
+}
+.service-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    justify-content: center;
+}
+
+.footer-offer-container{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    padding-right: 260px;
+}
+.site-footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 15%;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.site-footer-right, .site-footer-left, .site-footer-middle, .site-footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 25%;
+    padding: 0 20px;
+}
+
+.site-footer-left, .site-footer-middle, .site-footer-subscribe {
+    padding-left: 25px;
+}
+
+.site-footer-right {
+    padding-right: 30px;
+}
+
+.site-footer-left h4, .site-footer-middle h4, .site-footer-subscribe h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.site-footer-left ul, .site-footer-middle ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.site-footer-left ul li, .site-footer-middle ul li {
+    margin-bottom: 10px;
+}
+
+.site-footer-left a, .site-footer-middle a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.site-footer-left a:hover, .site-footer-middle a:hover {
+    text-decoration: underline;
+}
+
+.site-footer-right .h3-footer h3 {
+    font-size: 1.5em;
+    color: #343a40;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.site-footer-subscribe form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.site-footer-subscribe input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.site-footer-subscribe button {
+    padding: 10px 20px;
+    background-color: #35A6F1;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.site-footer-subscribe button:hover {
+    background-color: #1d8bc6;
+}
+
+
