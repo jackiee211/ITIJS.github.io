@@ -3,8 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --clr_Dark:#070a13;
+    --clr_Light:#f1f5f9;
+}
+.dark_mode{
+    --clr_Light:#070a13;
+    --clr_Dark:#f1f5f9;
+}
+
 body {
-    min-height: 100vh; /* Ensure body takes full height */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -41,7 +51,8 @@ body {
 .main-header-text{
     font-size: 66px;
     font-family: Lato;
-    color: rgb(244, 244, 244);
+    /* color: rgb(244, 244, 244); */
+    color: var(--clr_Light);
     letter-spacing: 1.8px;
     padding: 10px;
 }
@@ -50,6 +61,7 @@ body {
     height: 100px;
     justify-content: center;
     padding: 0 25%;
+    background-color:  var(--clr_Light);
 }
 .carousel-inner{
     display: flex;
@@ -61,6 +73,7 @@ body {
     display: flex;
     justify-content: center;
     min-width: 200px;
+    background-color: var(--clr_Light);
 }
 .offer-card1{
     background-image:url('../images/women-fashion-free-img.jpg');
@@ -101,10 +114,8 @@ body {
 }
 .featured-cont{
     display: flex;
-    height:100%;
-    background-color: rgb(244, 244, 244);
-    flex-wrap: wrap;
-    justify-content: space-between;
+    background-color: var(--clr_Light);
+    justify-content: center;
 }
 .featured-header-container{
     display: flex;
@@ -113,20 +124,12 @@ body {
     margin-bottom: 70px;
 }
 .prod-card{
-    margin-left: 5%;
     margin-bottom: 25px;
-
-}
-.products-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 50px;
 }
 .prod-text{
     width: 100%;
-    
 }
+
 .bottom-offer-cont{
     display: flex;
     width: 100%;
@@ -173,7 +176,8 @@ body {
     flex-wrap: wrap;
     padding: 5% 15%;
     width: 100%;
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
+    background-color: var(--clr_Light);
 }
 
 .site-footer-right, .site-footer-left, .site-footer-middle, .site-footer-subscribe {
@@ -239,13 +243,68 @@ body {
 .site-footer-subscribe button {
     padding: 10px 20px;
     background-color: #35A6F1;
-    color: white;
+    /* color: white; */
+    color: var(--clr_Light);
     border: none;
     cursor: pointer;
 }
-
+.sun-solid{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
 .site-footer-subscribe button:hover {
     background-color: #1d8bc6;
 }
-
-
+p,h2,h3,a{
+    color: var(--clr_Dark) !important;
+}
+.prod-text{
+    color: var(--clr_Dark);
+}
+.fonts{
+    font-size: 75px;
+    color: var(--clr_Dark);
+}
+.site-footer-right .h3-footer h3{
+ color: var(--clr_Dark) !important;
+}
+.site-footer-left h4, .site-footer-middle h4, .site-footer-subscribe h4{
+    color: var(--clr_Dark) !important;
+}
+/* HTML: <div class="loader"></div> */
+.loading{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #070a1386;
+    z-index: 999;
+}
+.loader {
+    width: 80px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 6px solid #0000;
+    border-radius: 50%;
+    border-right-color: #25b09b;
+    animation: l15 1s infinite linear;
+  }
+  .loader::before,
+  .loader::after {    
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+    animation: l15 2s infinite;
+  }
+  .loader::after {
+    margin: 8px;
+    animation-duration: 3s;
+  }
+  @keyframes l15{ 
+    100%{transform: rotate(1turn)}
+  }
