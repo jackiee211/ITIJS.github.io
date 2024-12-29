@@ -30,9 +30,9 @@ formData.addEventListener("input", function () {
 function logInUser(email, password) {
     const user = userData.find(user => user.email === email && user.password === password);
     if (user.email === "admin@gmail.com") {
-        location.href = 'adminDashboard.html';
+        location.href = './adminDashboard.html';
     }else if(user) {
-        location.href = "index.html"
+        location.href = "./index.html"
     }
      else {
         msg.textContent = "Invalid email or password.";
